@@ -47,7 +47,7 @@ def api_func_1(result,url, data):
                         "Authorization": "Bearer" + " " + req_token}
     res1 = requests.post(url=url, json=data, headers=header)
     response = res1.json()
-    print(response)
+    #print(response)
     return response
 
 # 审核发送请求
@@ -60,7 +60,7 @@ def api_func_2(result,url, data):
     res1 = requests.patch(url = url , json = data ,headers = header)
     # res1 = requests.post(url=url, json=data, headers=header)
     response = res1.json()
-    print(response)
+    # print(response)
     return response
 
 # 写入断言结果
