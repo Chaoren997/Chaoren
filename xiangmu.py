@@ -164,12 +164,12 @@ real_result = execute_func('test_case_api.xlsx', 'login')
 loan_add_result = execute_func_1('test_case_api.xlsx','loan_add',real_result)
 # 登录管理员账户
 admin_login_result = admin_login()
-print(admin_login_result)
+# print(admin_login_result)
 # admin_login_result是要获取管理员用户的token
 execute_func_2('test_case_api.xlsx','loan_audit',admin_login_result)
 # 在切换用户投资
 user_login_result = user_login()
-print(user_login_result)
+# print(user_login_result)
 execute_func_1('test_case_api.xlsx','withdraw',user_login_result)
 
 
